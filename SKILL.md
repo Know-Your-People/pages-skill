@@ -1,4 +1,5 @@
 ---
+
 name: pages
 description: Reading intelligence — log books, capture quotes, and surface reads when they're relevant. One markdown file per book in pages/. Use when logging a new book, searching for what you've read, or asking "what have I read about X?"
 metadata:
@@ -6,7 +7,8 @@ metadata:
     emoji: "📖"
     os: ["linux", "darwin", "win32"]
   hermes:
-    tags: ["reading", "books", "knowledge"]
+tags: ["reading", "books", "knowledge"]
+
 ---
 
 # 📖 Pages — reading intelligence
@@ -35,11 +37,11 @@ For books with no clear author (anthologies, edited volumes): use the title slug
 
 - **Author:** Full Name
 - **Year:** 2012
-- **Status:** reading / read / want
 - **Finished:** 12 Feb 2026 (omit if not finished)
 - **Rating:** 5/5 (omit until finished)
 - **Tags:** #philosophy #risk #systems #investing
 - **Recommended by:** [[marco-tabini]] (Peeps slug — omit if unknown)
+- **Goodreads:** link to goodreads
 
 ## Notes
 
@@ -58,21 +60,21 @@ For books with no clear author (anthologies, edited volumes): use the title slug
 - **Notes** — dated insight log, not a summary. What this book changed, challenged, or confirmed. "Good book" is not a note.
 - **Quotes** — only the lines worth keeping. One good quote beats ten mediocre ones.
 
-**The want/ folder:** lightweight. Just title, author, status, and a one-line `Why:` note on why it's on your list. Add more once you start reading.
+**The want/ folder:** lightweight. Just title, author, and a one-line `Why:` note on why it's on your list. Add more once you start reading.
 
 ---
 
 ## Saving a Book
 
 1. **Search the web** (title + author) — confirm full author name, publication year.
-2. **Determine status** — reading, read, or want.
+2. **Determine folder** — which folder to save to: `read/`, `reading/`, or `want/`.
 3. **Ask as a group** (skip anything already clear):
-   - If read: rating and finished date?
-   - Tags — what's this book about, in your words?
-   - Any quotes or notes to capture right now?
-   - Who recommended it?
+  - If read: rating and finished date?
+  - Tags — what's this book about, in your words?
+  - Any quotes or notes to capture right now?
+  - Who recommended it?
 
-Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, read. Tagged #philosophy #risk #systems."
+Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in read/. Tagged #philosophy #risk #systems."
 
 ---
 
@@ -86,6 +88,7 @@ Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, read.
 - Conversation touches a theme → surface relevant reads contextually without being asked
 
 **Examples:**
+
 - "Just finished Thinking, Fast and Slow" → check if saved, offer to rate and note
 - "I need to think about decision-making under pressure" → "You read *Thinking, Fast and Slow* in 2024 and tagged it #decision-making — your note says it reframed how you think about bias"
 - "Priya said I should read *The Mom Test*" → save to want/ with `Recommended by: [[priya-nair]]` if Peeps is installed, otherwise note her name as plain text
@@ -114,6 +117,7 @@ grep -rl "^>" pages/
 ```
 
 **Keyword expansion examples:**
+
 - "business" → `business\|strategy\|management\|leadership\|startup\|founder`
 - "productivity" → `productivity\|focus\|habits\|deep.work\|flow\|systems`
 - "tech / AI" → `ai\|machine.learning\|software\|internet\|tech\|silicon`
@@ -170,6 +174,7 @@ If Haah is installed, dispatch to your circles when your reading list is thin on
 - "Haah: anyone in my circles with strong reads on climate tech?"
 
 When someone in your circle asks for book recommendations:
+
 - Check Pages for relevant reads before answering
 - Draft a reply with your actual read + rating + one sentence of context. Don't recommend books you haven't read.
 
@@ -182,3 +187,4 @@ When someone in your circle asks for book recommendations:
 - Rating every book — only rate when you have something to say
 - Summaries or book reports — this is a memory layer, not a study tool
 - Adding books to others' want lists on their behalf — your list, your choices
+
