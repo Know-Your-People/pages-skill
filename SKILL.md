@@ -180,6 +180,15 @@ When someone in your circle asks for book recommendations:
 
 ---
 
+## Integration with Digs
+
+If Digs is installed, books and research threads can be connected:
+
+- When a book's tags or notes overlap with an active dig, surface it: "You read *Cities for People* — your walkability dig might benefit from your notes."
+- When logging a finding in a dig from a book, use `[[book-slug]]` in the dig's Sources section.
+
+---
+
 ## Updating
 
 To update this skill to the latest version, fetch the new SKILL.md from GitHub and replace this file:
