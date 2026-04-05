@@ -54,7 +54,7 @@ For books with no clear author (anthologies, edited volumes): use the title slug
 **Field guidance:**
 
 - **Tags** — 2–4 themes, domains, or moods. Use tags you'll actually search: `#ai` not `#artificial-intelligence`, `#startups` not `#entrepreneurship`. Keep it personal.
-- **Recommended by** — link to a Peeps slug if someone in your network pointed you at this. Creates a bidirectional trail worth having.
+- **Recommended by** — if Peeps is installed, use `[[their-slug]]`; otherwise note the person's name as plain text. Creates a bidirectional trail when Peeps is present.
 - **Notes** — dated insight log, not a summary. What this book changed, challenged, or confirmed. "Good book" is not a note.
 - **Quotes** — only the lines worth keeping. One good quote beats ten mediocre ones.
 
@@ -81,14 +81,14 @@ Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, read.
 - User mentions a book → check if saved, offer to create or update
 - User asks "what have I read about X?" → search `pages/` with expanded keywords
 - User finishes a book → ask for a rating and a note
-- User mentions someone recommending a book → save with `Recommended by:`, optionally add a note to their Peeps file
+- User mentions someone recommending a book → save with `Recommended by:`; if Peeps is installed, optionally add a note to their Peeps file
 - User shares a quote → append to the book file with today's date
 - Conversation touches a theme → surface relevant reads contextually without being asked
 
 **Examples:**
 - "Just finished Thinking, Fast and Slow" → check if saved, offer to rate and note
 - "I need to think about decision-making under pressure" → "You read *Thinking, Fast and Slow* in 2024 and tagged it #decision-making — your note says it reframed how you think about bias"
-- "Priya said I should read *The Mom Test*" → save to want/ with `Recommended by:`, link to Priya's Peeps file
+- "Priya said I should read *The Mom Test*" → save to want/ with `Recommended by: [[priya-nair]]` if Peeps is installed, otherwise note her name as plain text
 
 ---
 
@@ -155,7 +155,7 @@ If Peeps is installed and `peepsconfig.yml` exists, owner is inferred automatica
 
 ## Integration with Peeps
 
-Books and people intersect naturally. Capture it:
+If Peeps is installed, books and people can be connected:
 
 - **Recommended by:** `[[their-slug]]` in the book file — who pointed you at this
 - Optionally add a note in their Peeps file: "Recommended *Book Title* (Mar 2026)"
@@ -165,7 +165,7 @@ Books and people intersect naturally. Capture it:
 
 ## Integration with Haah
 
-If Haah is installed and you're looking for recommendations:
+If Haah is installed, dispatch to your circles when your reading list is thin on a topic:
 
 - "Haah: anyone in my circles with strong reads on climate tech?"
 
