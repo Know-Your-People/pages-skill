@@ -180,6 +180,16 @@ When someone in your circle asks for book recommendations:
 
 ---
 
+## Updating
+
+To update this skill to the latest version, fetch the new SKILL.md from GitHub and replace this file:
+
+```
+https://raw.githubusercontent.com/Know-Your-People/pages-skill/main/SKILL.md
+```
+
+---
+
 ## What NOT to Suggest
 
 - Syncing with Goodreads or Amazon — different purpose, keep private
