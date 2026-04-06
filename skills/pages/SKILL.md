@@ -15,12 +15,12 @@ tags: ["reading", "books", "knowledge"]
 
 ## Data
 
-**Base path:** `~/` is workspace root or document root folder. On first use, create it: `mkdir -p ~/kyp/pages/` or `mkdir -p ./kyp/pages/`. Pages uses a `~/kyp/pages/` folder in your workspace.
+**Base path:** workspace root or document root folder. On first use, create it: `mkdir -p kyp/pages/` or `mkdir -p ./kyp/pages/`. Pages uses a `kyp/pages/` folder in your workspace.
 
-Files live in `~/kyp/pages/`. Organised by reading status:
+Files live in `kyp/pages/`. Organised by reading status:
 
 ```
-~/kyp/
+kyp/
 └── pages/
     ├── pagesconfig.yml
     ├── read/        ← finished
@@ -84,7 +84,7 @@ Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in re
 ## Core Behavior
 
 - User mentions a book → check if saved, offer to create or update
-- User asks "what have I read about X?" → search `~/kyp/pages/` with expanded keywords
+- User asks "what have I read about X?" → search `kyp/pages/` with expanded keywords
 - User finishes a book → ask for a rating and a note
 - User mentions someone recommending a book → save with `Recommended by:`; if Peeps is installed, optionally add a note to their Peeps file
 - User shares a quote → append to the book file with today's date
@@ -94,7 +94,7 @@ Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in re
 
 - "Just finished Thinking, Fast and Slow" → check if saved, offer to rate and note
 - "I need to think about decision-making under pressure" → "You read *Thinking, Fast and Slow* in 2024 and tagged it #decision-making — your note says it reframed how you think about bias"
-- "Priya said I should read *The Mom Test*" → save to `~/kyp/pages/want/` with `Recommended by: [[priya-nair]]` if Peeps is installed, otherwise note her name as plain text
+- "Priya said I should read *The Mom Test*" → save to `kyp/pages/want/` with `Recommended by: [[priya-nair]]` if Peeps is installed, otherwise note her name as plain text
 
 ---
 
@@ -104,19 +104,19 @@ Use `grep` with expanded terms. Always broaden the query before searching.
 
 ```bash
 # Books on a topic
-grep -ril "decision\|bias\|judgement\|psychology" ~/kyp/pages/
+grep -ril "decision\|bias\|judgement\|psychology" kyp/pages/
 
 # Highly-rated reads
-grep -rl "Rating: 5" ~/kyp/pages/read/
+grep -rl "Rating: 5" kyp/pages/read/
 
 # Books recommended by a specific person
-grep -rl "\[\[priya" ~/kyp/pages/
+grep -rl "\[\[priya" kyp/pages/
 
 # Currently reading
-ls ~/kyp/pages/reading/
+ls kyp/pages/reading/
 
 # Books with captured quotes
-grep -rl "^>" ~/kyp/pages/
+grep -rl "^>" kyp/pages/
 ```
 
 **Keyword expansion examples:**
@@ -150,7 +150,7 @@ If it is not there yet, ask your human if they want to add **Pages: check** to H
 
 ## Config — `pagesconfig.yml`
 
-Optional. Lives inside `~/kyp/pages/`.
+Optional. Lives inside `kyp/pages/`.
 
 ```yaml
 owner: jane-smith  # your Peeps slug — used for cross-referencing shared reads
