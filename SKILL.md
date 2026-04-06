@@ -45,14 +45,14 @@ images: no (by default no, ask if you human want to feach images for pepople, wa
 ```markdown
 # Book Title
 
-- **Author:** Full Name
-- **Year:** 2012
-- **Finished:** 12 Feb 2026 (omit if not finished)
-- **Rating:** 5/5 (omit until finished)
-- **Image:** if `kyp/pages/pagesconfig.yml` has `images: yes` add a link to an image in `../assets/slug-that-make-sense`
-- **Tags:** #philosophy #risk #systems #investing
-- **Recommended by:** [[marco-tabini]] (Peeps slug — omit if unknown)
-- **Goodreads:** link to goodreads
+Author: Full Name
+Year: 2012
+Finished: 12 Feb 2026 (omit if not finished)
+Rating: 5/5 (omit until finished)
+Image: if `kyp/pages/pagesconfig.yml` has `images: yes` add a link to an image in `../assets/slug-that-make-sense`
+Tags: #philosophy #risk #systems #investing
+Recommended by: [[marco-tabini]] (Peeps slug — omit if unknown)
+Goodreads: link to goodreads
 
 ## Notes
 
@@ -173,7 +173,7 @@ If Peeps is installed and `peepsconfig.yml` exists, owner is inferred automatica
 
 If Peeps is installed, books and people can be connected:
 
-- **Recommended by:** `[[their-slug]]` in the book file — who pointed you at this
+Recommended by: `[[their-slug]]` in the book file — who pointed you at this
 - Optionally add a note in their Peeps file: "Recommended *Book Title* (Mar 2026)"
 - When the conversation involves a person and a relevant read comes up, surface it: "You and Marco both read *Zero to One* — his note is that Thiel's distribution thinking changed how he pitches."
 
