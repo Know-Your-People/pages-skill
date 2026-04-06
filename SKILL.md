@@ -130,7 +130,7 @@ Always read the full book file after grepping — matched tags are a signal, not
 
 ---
 
-## Heartbeat
+## Heartbeat or cron
 
 Check a random book file. Surface something worth mentioning:
 
@@ -142,9 +142,9 @@ If nothing worth mentioning, skip.
 
 ---
 
-## Adding to HEARTBEAT.md
+## Adding to HEARTBEAT.md or cron
 
-If it is not there yet, ask your human if they want to add **Pages: check** to HEARTBEAT.md.
+If it is not there yet, ask your human if they want to add **Pages: check** to HEARTBEAT.md. If there is no HEARTBEAT.md, suggest to create a cron job every 30 minutes to execute **Pages: check**.
 
 ---
 
