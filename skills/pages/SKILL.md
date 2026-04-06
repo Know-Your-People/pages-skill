@@ -66,10 +66,10 @@ Goodreads: link to goodreads
 
 **Field guidance:**
 
-- **Tags** — 2–4 themes, domains, or moods. Use tags you'll actually search: `#ai` not `#artificial-intelligence`, `#startups` not `#entrepreneurship`. Keep it personal.
-- **Recommended by** — if Peeps is installed, use `[[their-slug]]`; otherwise note the person's name as plain text. Creates a bidirectional trail when Peeps is present.
-- **Notes** — dated insight log, not a summary. What this book changed, challenged, or confirmed. "Good book" is not a note.
-- **Quotes** — only the lines worth keeping. One good quote beats ten mediocre ones.
+Tags: 2–4 themes, domains, or moods. Use tags you'll actually search: `#ai` not `#artificial-intelligence`, `#startups` not `#entrepreneurship`. Keep it personal.
+Recommended by: if Peeps is installed, use `[[their-slug]]`; otherwise note the person's name as plain text. Creates a bidirectional trail when Peeps is present.
+Notes: dated insight log, not a summary. What this book changed, challenged, or confirmed. "Good book" is not a note.
+Quotes: only the lines worth keeping. One good quote beats ten mediocre ones.
 
 **The want/ folder:** lightweight. Just title, author, and a one-line `Why:` note on why it's on your list. Add more once you start reading.
 
