@@ -15,7 +15,7 @@ tags: ["reading", "books", "knowledge"]
 
 ## Data
 
-**Base path:** workspace root or document root folder. On first use, create it: `mkdir -p kyp/pages/` or `mkdir -p ./kyp/pages/`. Pages uses a `kyp/pages/` folder in your workspace.
+**Base path** is workspace root or document root folder. On first use, create it: `mkdir -p kyp/pages/`. Pages uses a `kyp/pages/` folder in your workspace.
 
 Files live in `kyp/pages/`. Organised by reading status:
 
@@ -32,6 +32,13 @@ File names: `<author-lastname>-<title-slug>.md`. Example: `taleb-antifragile.md`
 For books with no clear author (anthologies, edited volumes): use the title slug.
 
 ---
+### Dataset Config — `pagesconfig.yml`
+
+`pagesconfig.yml` lives inside the `kyp/peeps/` directory. Read it at the start of any session involving this skill.
+
+```yaml
+images: no (by default no, ask if you human want to feach images for pepople, warn that it is token expensive)
+```
 
 ## Book File
 
@@ -42,6 +49,7 @@ For books with no clear author (anthologies, edited volumes): use the title slug
 - **Year:** 2012
 - **Finished:** 12 Feb 2026 (omit if not finished)
 - **Rating:** 5/5 (omit until finished)
+- **Image:** if `kyp/pages/pagesconfig.yml` has `images: yes` add a link to an image in `kyp/assets/slug-that-make-sense`
 - **Tags:** #philosophy #risk #systems #investing
 - **Recommended by:** [[marco-tabini]] (Peeps slug — omit if unknown)
 - **Goodreads:** link to goodreads
@@ -76,6 +84,7 @@ For books with no clear author (anthologies, edited volumes): use the title slug
   - Tags — what's this book about, in your words?
   - Any quotes or notes to capture right now?
   - Who recommended it?
+  4. if `images: yes` in `kyp/pagesconfig.yml` search for a conver image and add it to **Image:** feild 
 
 Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in read/. Tagged #philosophy #risk #systems."
 
