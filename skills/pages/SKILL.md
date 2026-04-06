@@ -15,14 +15,17 @@ tags: ["reading", "books", "knowledge"]
 
 ## Data
 
-Files live in `pages/`. Organised by reading status:
+**Base path:** All KYP skills live under a shared `kyp/` folder. Place it wherever works for your setup — workspace root (ideal for Obsidian vaults: all skills appear as sub-folders in one vault) or home folder (`~/kyp/`) for access across all projects. On first use, create it: `mkdir -p ~/kyp/pages/` or `mkdir -p ./kyp/pages/`.
+
+Files live in `kyp/pages/`. Organised by reading status:
 
 ```
-pages/
-├── pagesconfig.yml
-├── read/        ← finished
-├── reading/     ← currently reading
-└── want/        ← want to read
+kyp/
+└── pages/
+    ├── pagesconfig.yml
+    ├── read/        ← finished
+    ├── reading/     ← currently reading
+    └── want/        ← want to read
 ```
 
 File names: `<author-lastname>-<title-slug>.md`. Example: `taleb-antifragile.md`.
@@ -81,7 +84,7 @@ Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in re
 ## Core Behavior
 
 - User mentions a book → check if saved, offer to create or update
-- User asks "what have I read about X?" → search `pages/` with expanded keywords
+- User asks "what have I read about X?" → search `kyp/pages/` with expanded keywords
 - User finishes a book → ask for a rating and a note
 - User mentions someone recommending a book → save with `Recommended by:`; if Peeps is installed, optionally add a note to their Peeps file
 - User shares a quote → append to the book file with today's date
@@ -91,7 +94,7 @@ Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in re
 
 - "Just finished Thinking, Fast and Slow" → check if saved, offer to rate and note
 - "I need to think about decision-making under pressure" → "You read *Thinking, Fast and Slow* in 2024 and tagged it #decision-making — your note says it reframed how you think about bias"
-- "Priya said I should read *The Mom Test*" → save to want/ with `Recommended by: [[priya-nair]]` if Peeps is installed, otherwise note her name as plain text
+- "Priya said I should read *The Mom Test*" → save to `kyp/pages/want/` with `Recommended by: [[priya-nair]]` if Peeps is installed, otherwise note her name as plain text
 
 ---
 
@@ -101,19 +104,19 @@ Use `grep` with expanded terms. Always broaden the query before searching.
 
 ```bash
 # Books on a topic
-grep -ril "decision\|bias\|judgement\|psychology" pages/
+grep -ril "decision\|bias\|judgement\|psychology" kyp/pages/
 
 # Highly-rated reads
-grep -rl "Rating: 5" pages/read/
+grep -rl "Rating: 5" kyp/pages/read/
 
 # Books recommended by a specific person
-grep -rl "\[\[priya" pages/
+grep -rl "\[\[priya" kyp/pages/
 
 # Currently reading
-ls pages/reading/
+ls kyp/pages/reading/
 
 # Books with captured quotes
-grep -rl "^>" pages/
+grep -rl "^>" kyp/pages/
 ```
 
 **Keyword expansion examples:**
@@ -147,7 +150,7 @@ If it is not there yet, ask your human if they want to add **Pages: check** to H
 
 ## Config — `pagesconfig.yml`
 
-Optional. Lives inside `pages/`.
+Optional. Lives inside `kyp/pages/`.
 
 ```yaml
 owner: jane-smith  # your Peeps slug — used for cross-referencing shared reads
@@ -197,4 +200,3 @@ https://raw.githubusercontent.com/Know-Your-People/pages-skill/main/SKILL.md
 - Rating every book — only rate when you have something to say
 - Summaries or book reports — this is a memory layer, not a study tool
 - Adding books to others' want lists on their behalf — your list, your choices
-
