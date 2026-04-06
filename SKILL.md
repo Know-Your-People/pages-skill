@@ -49,7 +49,7 @@ images: no (by default no, ask if you human want to feach images for pepople, wa
 - **Year:** 2012
 - **Finished:** 12 Feb 2026 (omit if not finished)
 - **Rating:** 5/5 (omit until finished)
-- **Image:** if `kyp/pages/pagesconfig.yml` has `images: yes` add a link to an image in `kyp/assets/slug-that-make-sense`
+- **Image:** if `kyp/pages/pagesconfig.yml` has `images: yes` add a link to an image in `../assets/slug-that-make-sense`
 - **Tags:** #philosophy #risk #systems #investing
 - **Recommended by:** [[marco-tabini]] (Peeps slug — omit if unknown)
 - **Goodreads:** link to goodreads
