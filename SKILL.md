@@ -32,7 +32,7 @@ File names: `<author-lastname>-<title-slug>.md`. Example: `taleb-antifragile.md`
 For books with no clear author (anthologies, edited volumes): use the title slug.
 
 ---
-### Dataset Config
+### Dataset Config — `pagesconfig.yml`
 
 `pagesconfig.yml` lives inside the `kyp/peeps/` directory. Read it at the start of any session involving this skill.
 
