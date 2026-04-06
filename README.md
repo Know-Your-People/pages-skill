@@ -88,7 +88,7 @@ Pages is part of a suite of personal intelligence skills:
 - [**Peeps** 👥](https://github.com/Know-Your-People/peeps-skill) — your personal network. When someone recommends a book, Pages links it to their Peeps file. Your agent can surface it the next time their name comes up.
 - [**Vibes** 🎧](https://github.com/Know-Your-People/vibes-skill) — albums, shows, podcasts, films, YouTube channels. The cultural sibling to Pages — some ideas start as a book and finish as a film.
 - [**Nooks** 📍](https://github.com/Know-Your-People/nooks-skill) — your saved places. A good reading nook is where pages get finished.
-- [**Digs** 🔭](https://github.com/Know-Your-People/dig-skill) — your active research threads. Books relevant to an open dig surface automatically as a source.
+- [**Digs** 🔭](https://github.com/Know-Your-People/digs-skill) — your active research threads. Books relevant to an open dig surface automatically as a source.
 
 Install all six and your agent knows your people, your places, your reads, your culture, and your open questions.
 
