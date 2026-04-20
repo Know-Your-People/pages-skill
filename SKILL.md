@@ -34,7 +34,7 @@ For books with no clear author (anthologies, edited volumes): use the title slug
 ---
 ### Dataset Config — `pagesconfig.yml`
 
-`pagesconfig.yml` lives inside the `mind/peeps/` directory. Read it at the start of any session involving this skill.
+`pagesconfig.yml` lives inside the `mind/pages/` directory. Read it at the start of any session involving this skill.
 
 ```yaml
 images: no (by default no, ask if you human want to feach images for pepople, warn that it is token expensive)
