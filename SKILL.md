@@ -197,7 +197,7 @@ When someone in your circle asks for book recommendations:
 To update this skill to the latest version, fetch the new SKILL.md from GitHub and replace this file:
 
 ```
-https://raw.githubusercontent.com/Know-Your-People/pages-skill/main/SKILL.md
+https://raw.githubusercontent.com/haah-ing/pages-skill/main/SKILL.md
 ```
 
 ---
