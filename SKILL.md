@@ -15,12 +15,12 @@ tags: ["reading", "books", "knowledge"]
 
 ## Data
 
-**Base path** is workspace root or document root folder. On first use, create it: `mkdir -p kyp/pages/`. Pages uses a `kyp/pages/` folder in your workspace.
+**Base path** is workspace root or document root folder. On first use, create it: `mkdir -p mind/pages/`. Pages uses a `mind/pages/` folder in your workspace.
 
-Files live in `kyp/pages/`. Organised by reading status:
+Files live in `mind/pages/`. Organised by reading status:
 
 ```
-kyp/
+mind/
 └── pages/
     ├── pagesconfig.yml
     ├── read/        ← finished
@@ -34,7 +34,7 @@ For books with no clear author (anthologies, edited volumes): use the title slug
 ---
 ### Dataset Config — `pagesconfig.yml`
 
-`pagesconfig.yml` lives inside the `kyp/peeps/` directory. Read it at the start of any session involving this skill.
+`pagesconfig.yml` lives inside the `mind/peeps/` directory. Read it at the start of any session involving this skill.
 
 ```yaml
 images: no (by default no, ask if you human want to feach images for pepople, warn that it is token expensive)
@@ -49,7 +49,7 @@ Author: Full Name
 Year: 2012
 Finished: 12 Feb 2026 (omit if not finished)
 Rating: 5/5 (omit until finished)
-Image: if `kyp/pages/pagesconfig.yml` has `images: yes` add a link to an image in `../assets/slug-that-make-sense`
+Image: if `mind/pages/pagesconfig.yml` has `images: yes` add a link to an image in `../assets/slug-that-make-sense`
 Tags: #philosophy #risk #systems #investing
 Recommended by: [[marco-tabini]] (Peeps slug — omit if unknown)
 Goodreads: link to goodreads
@@ -84,7 +84,7 @@ Quotes: only the lines worth keeping. One good quote beats ten mediocre ones.
   - Tags — what's this book about, in your words?
   - Any quotes or notes to capture right now?
   - Who recommended it?
-  4. if `images: yes` in `kyp/pagesconfig.yml` search for a conver image and add it to **Image:** feild 
+  4. if `images: yes` in `mind/pagesconfig.yml` search for a conver image and add it to **Image:** feild 
 
 Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in read/. Tagged #philosophy #risk #systems."
 
@@ -93,7 +93,7 @@ Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in re
 ## Core Behavior
 
 - User mentions a book → check if saved, offer to create or update
-- User asks "what have I read about X?" → search `kyp/pages/` with expanded keywords
+- User asks "what have I read about X?" → search `mind/pages/` with expanded keywords
 - User finishes a book → ask for a rating and a note
 - User mentions someone recommending a book → save with `Recommended by:`; if Peeps is installed, optionally add a note to their Peeps file
 - User shares a quote → append to the book file with today's date
@@ -103,7 +103,7 @@ Show a brief confirmation: "Saved — *Antifragile* by Nassim Taleb, 2012, in re
 
 - "Just finished Thinking, Fast and Slow" → check if saved, offer to rate and note
 - "I need to think about decision-making under pressure" → "You read *Thinking, Fast and Slow* in 2024 and tagged it #decision-making — your note says it reframed how you think about bias"
-- "Priya said I should read *The Mom Test*" → save to `kyp/pages/want/` with `Recommended by: [[priya-nair]]` if Peeps is installed, otherwise note her name as plain text
+- "Priya said I should read *The Mom Test*" → save to `mind/pages/want/` with `Recommended by: [[priya-nair]]` if Peeps is installed, otherwise note her name as plain text
 
 ---
 
@@ -113,19 +113,19 @@ Use `grep` with expanded terms. Always broaden the query before searching.
 
 ```bash
 # Books on a topic
-grep -ril "decision\|bias\|judgement\|psychology" kyp/pages/
+grep -ril "decision\|bias\|judgement\|psychology" mind/pages/
 
 # Highly-rated reads
-grep -rl "Rating: 5" kyp/pages/read/
+grep -rl "Rating: 5" mind/pages/read/
 
 # Books recommended by a specific person
-grep -rl "\[\[priya" kyp/pages/
+grep -rl "\[\[priya" mind/pages/
 
 # Currently reading
-ls kyp/pages/reading/
+ls mind/pages/reading/
 
 # Books with captured quotes
-grep -rl "^>" kyp/pages/
+grep -rl "^>" mind/pages/
 ```
 
 **Keyword expansion examples:**
@@ -159,7 +159,7 @@ If it is not there yet, ask your human if they want to add **Pages: check** to H
 
 ## Config — `pagesconfig.yml`
 
-Optional. Lives inside `kyp/pages/`.
+Optional. Lives inside `mind/pages/`.
 
 ```yaml
 owner: jane-smith  # your Peeps slug — used for cross-referencing shared reads
